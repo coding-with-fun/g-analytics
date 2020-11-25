@@ -9,14 +9,16 @@ function App() {
         ReactGA.pageview(window.location.pathname + window.location.search);
     }
 
-    useEffect(() => {}, [initializeReactGA]);
+    useEffect(() => {
+        initializeReactGA();
+    }, []);
 
     return (
         <div className="App">
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>
-                    Edit <code>src/App.js</code> and save to reload.
+                    Hello...
                 </p>
                 <a
                     className="App-link"
